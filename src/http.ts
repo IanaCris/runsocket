@@ -8,10 +8,8 @@ const app = express();
 
 const server = createServer(app);
 
-mongoose.connect("mongodb://localhost:27017/runsocket", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/runsocket");
+
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
