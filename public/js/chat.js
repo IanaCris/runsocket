@@ -1,10 +1,6 @@
 const socket = io("http://localhost:3000");
 
-socket.on("chat_iniciado", (data) => {
-  console.log(data);
-});
-
-/* let idChatRoom = "";
+let idChatRoom = "";
 
 function onLoad() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -18,7 +14,6 @@ function onLoad() {
       src=${avatar}
     />
     <strong id="user_logged">${name}</strong>
-  
   `;
 
   socket.emit("start", {
@@ -151,4 +146,4 @@ document.getElementById("user_message").addEventListener("keypress", (e) => {
   }
 });
 
-onLoad(); */
+onLoad();
