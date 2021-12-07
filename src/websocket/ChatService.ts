@@ -14,6 +14,6 @@ io.on("connect", (socket) => {
       socket_id: socket.id,
     });
 
-    console.log(user);
+    socket.broadcast.emit("new_users", user); // envia para todos os usuario exceto o que envia
   });
 });
